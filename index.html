@@ -13,14 +13,17 @@
       color: #333;
     }
     header {
-      background-color: white;
-      border-bottom: 1px solid #ddd;
-      padding: 1.5rem 2rem;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      flex-wrap: wrap;
-    }
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 999;
+    border-bottom: 1px solid #ddd;
+    padding: 1.5rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
     .name-title {
       font-size: 1.75rem;
       font-weight: 700;
@@ -43,6 +46,9 @@
       margin: auto;
     }
     .sidebar {
+      position: sticky;
+      top: 80px;
+      align-self: flex-start;
       flex: 1;
       min-width: 250px;
       max-width: 300px;
