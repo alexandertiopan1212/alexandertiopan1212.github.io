@@ -5,116 +5,152 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Alexander Tiopan | Portfolio</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Inter', sans-serif;
-      background-color: #f7f9fb;
-      color: #333;
-    }
-    header {
+<style>
+  body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background-color: #f5f7fa; /* soft light-gray-blue */
+    color: #333;
+  }
+
+  header {
     position: sticky;
     top: 0;
-    background-color: white;
+    background-color: #ffffff;
     z-index: 999;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid #e2e8f0;
     padding: 1.5rem 2rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
   }
-    .name-title {
-      font-size: 1.75rem;
-      font-weight: 700;
-      color: #1e2a38;
-    }
-    nav a {
-      margin-left: 1.5rem;
-      text-decoration: none;
-      color: #495057;
-      font-weight: 500;
-    }
-    nav a:hover {
-      color: #0d6efd;
-    }
-    .main {
-      display: flex;
-      flex-wrap: wrap;
-      padding: 2rem;
-      max-width: 1200px;
-      margin: auto;
-    }
-    .sidebar {
-      position: sticky;
-      top: 80px;
-      align-self: flex-start;
-      flex: 1;
-      min-width: 250px;
-      max-width: 300px;
-      margin-right: 2rem;
-      text-align: center;
-    }
-    .sidebar img {
-      border-radius: 50%;
-      width: 140px;
-      height: 140px;
-      object-fit: cover;
-    }
-    .sidebar h2 {
-      margin-top: 1rem;
-      margin-bottom: 0.3rem;
-      font-size: 1.25rem;
-    }
-    .sidebar p {
-      margin: 0.2rem 0;
-      font-size: 0.95rem;
-      color: #555;
-    }
-    .links a {
-      display: block;
-      margin: 0.25rem 0;
-      color: #0d6efd;
-      text-decoration: none;
-      font-size: 0.95rem;
-    }
-    .projects {
-      flex: 3;
-      min-width: 300px;
-    }
-    .project {
-      background: white;
-      padding: 1.5rem;
-      margin-bottom: 1.5rem;
-      border-radius: 10px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-    }
-    .project h3 {
-      margin: 0;
-      color: #0d6efd;
-      font-size: 1.1rem;
-    }
-    .project h3 a {
-      color: #0d6efd;
-      text-decoration: none;
-    }
-    .project h3 a:hover {
-      text-decoration: underline;
-    }
-    .project p {
-      margin: 0.5rem 0;
-    }
-    .tags {
-      color: #888;
-      font-size: 0.85rem;
-    }
-    footer {
-      text-align: center;
-      padding: 2rem;
-      color: #888;
-      font-size: 0.9rem;
-    }
-  </style>
+
+  .name-title {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: #1e2a38;
+  }
+
+  nav a {
+    margin-left: 1.5rem;
+    text-decoration: none;
+    color: #64748b; /* slate gray */
+    font-weight: 500;
+    transition: color 0.3s;
+  }
+
+  nav a:hover {
+    color: #1d4ed8; /* deep blue on hover */
+  }
+
+  .main {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2rem;
+    max-width: 1200px;
+    margin: auto;
+  }
+
+  .sidebar {
+    position: sticky;
+    top: 80px;
+    align-self: flex-start;
+    flex: 1;
+    min-width: 250px;
+    max-width: 300px;
+    margin-right: 2rem;
+    text-align: center;
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+  }
+
+  .sidebar img {
+    border-radius: 50%;
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+  }
+
+  .sidebar h2 {
+    margin-top: 1rem;
+    margin-bottom: 0.3rem;
+    font-size: 1.25rem;
+    color: #1e2a38;
+  }
+
+  .sidebar p {
+    margin: 0.2rem 0;
+    font-size: 0.95rem;
+    color: #555;
+  }
+
+  .links a {
+    display: block;
+    margin: 0.25rem 0;
+    color: #2563eb; /* blue-600 */
+    text-decoration: none;
+    font-size: 0.95rem;
+  }
+
+  .links a:hover {
+    text-decoration: underline;
+  }
+
+  .projects {
+    flex: 3;
+    min-width: 300px;
+  }
+
+  .project {
+    background: #ffffff;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+
+  .project:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+  }
+
+  .project h3 {
+    margin: 0;
+    font-size: 1.1rem;
+  }
+
+  .project h3 a {
+    color: #2563eb;
+    text-decoration: none;
+  }
+
+  .project h3 a:hover {
+    text-decoration: underline;
+  }
+
+  .project p {
+    margin: 0.5rem 0;
+    line-height: 1.6;
+  }
+
+  .tags {
+    color: #94a3b8;
+    font-size: 0.85rem;
+    margin-top: 0.5rem;
+  }
+
+  footer {
+    text-align: center;
+    padding: 2rem;
+    color: #94a3b8;
+    font-size: 0.9rem;
+  }
+</style>
+
 </head>
 <body>
   <header>
