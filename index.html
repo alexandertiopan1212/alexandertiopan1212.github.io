@@ -86,6 +86,14 @@
     .project h3 {
       margin: 0;
       color: #0d6efd;
+      font-size: 1.1rem;
+    }
+    .project h3 a {
+      color: #0d6efd;
+      text-decoration: none;
+    }
+    .project h3 a:hover {
+      text-decoration: underline;
     }
     .project p {
       margin: 0.5rem 0;
@@ -127,22 +135,45 @@
     </div>
 
     <div class="projects" id="projects">
-      <div class="project">
-        <h3><a href="https://github.com/alexandertiopan1212/Project-Progress-Monitoring">📊 Project Progress Monitoring</a></h3>
-        <p>Interactive tracker with Gantt chart, daily reporting, issue uploads to Drive.</p>
-        <div class="tags">#google-apps-script #project-monitoring</div>
-      </div>
-      <div class="project">
-        <h3><a href="https://github.com/alexandertiopan1212/PV-Power-Plant-Calculation">☀️ PV Power Plant Calculation</a></h3>
-        <p>Feasibility tool for solar power, integrates NASA GHI API & battery sizing.</p>
-        <div class="tags">#solar-energy #google-script #nasa-api</div>
-      </div>
-      <div class="project">
-        <h3><a href="https://github.com/alexandertiopan1212/capitalized">💰 Capitalized</a></h3>
-        <p>Financial modeling platform for equity, debt, option pricing & simulations.</p>
-        <div class="tags">#streamlit #valuation #finance</div>
-      </div>
-      <!-- Tambahkan semua repo lain dengan format yang sama -->
+      <!-- PROJECTS -->
+      <script>
+        const repos = [
+          "Project-Progress-Monitoring",
+          "PV-Power-Plant-Calculation",
+          "capitalized",
+          "Indonesian_Spelling_Corrector",
+          "Compressor_Control_Offline_RL",
+          "Classify_Fish_Species",
+          "Brent_Oil_Price_Prediction",
+          "Fracture_Leg_Detection",
+          "Clustering_Mobilphone_Sales",
+          "Clustering_Training_Customer",
+          "Hospital_Revenue_Prediction",
+          "American_Option_Price",
+          "GE_Visualization",
+          "Gold_Price_Prediction",
+          "District_Graph_Coloring",
+          "Clustering_Digital_Wallet_Users",
+          "Stock_Trend_Prediction",
+          "Classify_Wine_Class",
+          "Predicting_Overweight",
+          "Kompas_News_Hoax_Detection",
+          "PDF_Malware_Detection",
+          "Pytorch_to_ONNX_Converter",
+          "Kemenkeu_Bandwidth_Prediction"
+        ];
+        const container = document.currentScript.parentElement;
+        repos.forEach(repo => {
+          const card = document.createElement('div');
+          card.className = 'project';
+          card.innerHTML = `
+            <h3><a href="https://github.com/alexandertiopan1212/${repo}" target="_blank">${repo.replace(/_/g, ' ')}</a></h3>
+            <p>Click to view details on GitHub repository.</p>
+            <div class="tags">#github #project</div>
+          `;
+          container.appendChild(card);
+        });
+      </script>
     </div>
   </div>
 
