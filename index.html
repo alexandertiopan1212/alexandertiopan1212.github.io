@@ -1,68 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Alexander Tiopan | GitHub Portfolio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alexander Tiopan | Portfolio</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <style>
     body {
-      font-family: 'Inter', sans-serif;
-      background: #f5f7fa;
-      color: #333;
       margin: 0;
-      padding: 0;
+      font-family: 'Inter', sans-serif;
+      background-color: #f7f9fb;
+      color: #333;
     }
     header {
-      background: #1e2a38;
-      color: white;
-      padding: 2.5rem 1rem;
+      background-color: white;
+      border-bottom: 1px solid #ddd;
+      padding: 1.5rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    .name-title {
+      font-size: 1.75rem;
+      font-weight: 700;
+      color: #1e2a38;
+    }
+    nav a {
+      margin-left: 1.5rem;
+      text-decoration: none;
+      color: #495057;
+      font-weight: 500;
+    }
+    nav a:hover {
+      color: #0d6efd;
+    }
+    .main {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 2rem;
+      max-width: 1200px;
+      margin: auto;
+    }
+    .sidebar {
+      flex: 1;
+      min-width: 250px;
+      max-width: 300px;
+      margin-right: 2rem;
       text-align: center;
     }
-    header h1 {
-      margin: 0;
-      font-size: 2.5rem;
+    .sidebar img {
+      border-radius: 50%;
+      width: 140px;
+      height: 140px;
+      object-fit: cover;
     }
-    header p {
-      margin: 0.5rem 0 0;
-      font-size: 1.1rem;
-      color: #cfd8dc;
+    .sidebar h2 {
+      margin-top: 1rem;
+      margin-bottom: 0.3rem;
+      font-size: 1.25rem;
     }
-    .container {
-      max-width: 1100px;
-      margin: 2rem auto;
-      padding: 0 1rem;
+    .sidebar p {
+      margin: 0.2rem 0;
+      font-size: 0.95rem;
+      color: #555;
     }
-    .repo-card {
-      background: white;
-      border-radius: 10px;
-      padding: 1.5rem;
-      margin-bottom: 1.5rem;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.06);
-      transition: transform 0.2s ease;
-    }
-    .repo-card:hover {
-      transform: translateY(-5px);
-    }
-    .repo-title {
-      font-size: 1.3rem;
-      color: #0d6efd;
-      margin: 0;
-    }
-    .repo-title a {
+    .links a {
+      display: block;
+      margin: 0.25rem 0;
       color: #0d6efd;
       text-decoration: none;
+      font-size: 0.95rem;
     }
-    .repo-title a:hover {
-      text-decoration: underline;
+    .projects {
+      flex: 3;
+      min-width: 300px;
     }
-    .repo-desc {
-      margin: 0.5rem 0 0.75rem;
-      line-height: 1.5;
+    .project {
+      background: white;
+      padding: 1.5rem;
+      margin-bottom: 1.5rem;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
     }
-    .repo-tags {
-      color: #6c757d;
-      font-size: 0.9rem;
+    .project h3 {
+      margin: 0;
+      color: #0d6efd;
+    }
+    .project p {
+      margin: 0.5rem 0;
+    }
+    .tags {
+      color: #888;
+      font-size: 0.85rem;
     }
     footer {
       text-align: center;
@@ -73,70 +103,51 @@
   </style>
 </head>
 <body>
-
   <header>
-    <h1>Alexander Tiopan</h1>
-    <p>Data & AI Projects | Google Apps Script | Python | Streamlit</p>
+    <div class="name-title">Alexander Tiopan</div>
+    <nav>
+      <a href="#projects">Projects</a>
+      <a href="mailto:your.email@example.com">Contact</a>
+      <a href="https://www.linkedin.com/in/your-linkedin/">LinkedIn</a>
+      <a href="https://github.com/alexandertiopan1212">GitHub</a>
+    </nav>
   </header>
 
-  <div class="container">
-
-    <!-- Generated repository cards -->
-    <div class="repo-card">
-      <h2 class="repo-title"><a href="https://github.com/alexandertiopan1212/Project-Progress-Monitoring">📊 Project Progress Monitoring</a></h2>
-      <p class="repo-desc">Interactive project tracker with Gantt chart, daily reporting, and issue photo upload using Google Apps Script.</p>
-      <div class="repo-tags">#google-apps-script #project-monitoring</div>
+  <div class="main">
+    <div class="sidebar">
+      <img src="https://avatars.githubusercontent.com/u/16365963?v=4" alt="Alexander Tiopan">
+      <h2>Alexander Tiopan</h2>
+      <p>Data & AI Enthusiast</p>
+      <p>Google Apps Script | Streamlit | Python</p>
+      <div class="links">
+        <a href="mailto:your.email@example.com">📧 Email</a>
+        <a href="https://linkedin.com/in/your-linkedin">🔗 LinkedIn</a>
+        <a href="https://github.com/alexandertiopan1212">🐱 GitHub</a>
+      </div>
     </div>
 
-    <div class="repo-card">
-      <h2 class="repo-title"><a href="https://github.com/alexandertiopan1212/PV-Power-Plant-Calculation">☀️ PV Power Plant Calculation</a></h2>
-      <p class="repo-desc">Google Sheets template for PV feasibility with OSM map, NASA GHI fetch, and battery sizing.</p>
-      <div class="repo-tags">#google-apps-script #solar-energy #nasa-api</div>
+    <div class="projects" id="projects">
+      <div class="project">
+        <h3><a href="https://github.com/alexandertiopan1212/Project-Progress-Monitoring">📊 Project Progress Monitoring</a></h3>
+        <p>Interactive tracker with Gantt chart, daily reporting, issue uploads to Drive.</p>
+        <div class="tags">#google-apps-script #project-monitoring</div>
+      </div>
+      <div class="project">
+        <h3><a href="https://github.com/alexandertiopan1212/PV-Power-Plant-Calculation">☀️ PV Power Plant Calculation</a></h3>
+        <p>Feasibility tool for solar power, integrates NASA GHI API & battery sizing.</p>
+        <div class="tags">#solar-energy #google-script #nasa-api</div>
+      </div>
+      <div class="project">
+        <h3><a href="https://github.com/alexandertiopan1212/capitalized">💰 Capitalized</a></h3>
+        <p>Financial modeling platform for equity, debt, option pricing & simulations.</p>
+        <div class="tags">#streamlit #valuation #finance</div>
+      </div>
+      <!-- Tambahkan semua repo lain dengan format yang sama -->
     </div>
-
-    <div class="repo-card">
-      <h2 class="repo-title"><a href="https://github.com/alexandertiopan1212/capitalized">💰 Capitalized</a></h2>
-      <p class="repo-desc">Streamlit-based financial modeling app for valuation, pricing, and simulation.</p>
-      <div class="repo-tags">#python #finance #streamlit</div>
-    </div>
-
-    <div class="repo-card">
-      <h2 class="repo-title"><a href="https://github.com/alexandertiopan1212/Indonesian_Spelling_Corrector">📝 Indonesian Spelling Corrector</a></h2>
-      <p class="repo-desc">RNN-based spelling correction for Indonesian root words with preprocessing pipeline.</p>
-      <div class="repo-tags">#nlp #rnn #indonesia</div>
-    </div>
-
-    <div class="repo-card">
-      <h2 class="repo-title"><a href="https://github.com/alexandertiopan1212/Compressor_Control_Offline_RL">🔧 Compressor Control RL</a></h2>
-      <p class="repo-desc">Reinforcement learning-based model to stabilize compressor pressure using offline data.</p>
-      <div class="repo-tags">#rl #control-system #ensemble</div>
-    </div>
-
-    <!-- List of remaining repos -->
-    <div class="repo-card"><h2 class="repo-title"><a href="https://github.com/alexandertiopan1212/Classify_Fish_Species">🐟 Classify Fish Species</a></h2><p class="repo-desc">Fish classification using morphological features and image-based statistics.</p><div class="repo-tags">#image-classification #opencv</div></div>
-    <div class="repo-card"><h2 class="repo-title"><a href="https://github.com/alexandertiopan1212/Brent_Oil_Price_Prediction">🛢️ Brent Oil Price Prediction</a></h2><p class="repo-desc">Brent oil price forecasting using LSTM and dropout regularization.</p><div class="repo-tags">#timeseries #lstm</div></div>
-    <div class="repo-card"><h2 class="repo-title"><a href="https://github.com/alexandertiopan1212/Fracture_Leg_Detection">🦴 Fracture Leg Detection</a></h2><p class="repo-desc">Detecting leg bone fractures in X-ray using CNN and VGG16 architecture.</p><div class="repo-tags">#cnn #medical-ai</div></div>
-    <div class="repo-card"><h2 class="repo-title"><a href="https://github.com/alexandertiopan1212/Clustering_Mobilphone_Sales">📱 Clustering Mobilephone Sales</a></h2><p class="repo-desc">Segment mobile phones using K-means and data visualization.</p><div class="repo-tags">#clustering #marketing</div></div>
-    <div class="repo-card"><h2 class="repo-title"><a href="https://github.com/alexandertiopan1212/Clustering_Training_Customer">🧪 Clustering Training Customer</a></h2><p class="repo-desc">Customer segmentation with RFM model for training evaluation.</p><div class="repo-tags">#rfm #kmeans</div></div>
-    <div class="repo-card"><h2 class="repo-title"><a href="https://github.com/alexandertiopan1212/Hospital_Revenue_Prediction">🏥 Hospital Revenue Prediction</a></h2><p class="repo-desc">Clustering hospital revenue based on insurance claim payment.</p><div class="repo-tags">#clustering #timeseries</div></div>
-    <div class="repo-card"><h2 class="repo-title"><a href="https://github.com/alexandertiopan1212/American_Option_Price">📈 American Option Price</a></h2><p class="repo-desc">Option valuation using binomial model for project participation rights.</p><div class="repo-tags">#options #binomial-tree</div></div>
-    <div class="repo-card"><h2 class="repo-title"><a href="https://github.com/alexandertiopan1212/GE_Visualization">📊 GE Visualization</a></h2><p class="repo-desc">GE McKinsey Matrix for strategic market analysis using Python visualization.</p><div class="repo-tags">#strategy #mckinsey</div></div>
-    <div class="repo-card"><h2 class="repo-title"><a href="https://github.com/alexandertiopan1212/Gold_Price_Prediction">🥇 Gold Price Prediction</a></h2><p class="repo-desc">Gold price forecasting with RBF Neural Network model.</p><div class="repo-tags">#rbf #forecasting</div></div>
-    <div class="repo-card"><h2 class="repo-title"><a href="https://github.com/alexandertiopan1212/District_Graph_Coloring">🗺️ District Graph Coloring</a></h2><p class="repo-desc">Greedy and Welch-Powell algorithms for district map coloring.</p><div class="repo-tags">#graph-theory</div></div>
-    <div class="repo-card"><h2 class="repo-title"><a href="https://github.com/alexandertiopan1212/Clustering_Digital_Wallet_Users">💳 Digital Wallet Clustering</a></h2><p class="repo-desc">Segment users of digital wallet using KPrototypes algorithm.</p><div class="repo-tags">#clustering #kprototypes</div></div>
-    <div class="repo-card"><h2 class="repo-title"><a href="https://github.com/alexandertiopan1212/Stock_Trend_Prediction">📉 Stock Trend Prediction</a></h2><p class="repo-desc">TOBA stock prediction using Random Forest and feature engineering.</p><div class="repo-tags">#stocks #random-forest</div></div>
-    <div class="repo-card"><h2 class="repo-title"><a href="https://github.com/alexandertiopan1212/Classify_Wine_Class">🍷 Classify Wine Class</a></h2><p class="repo-desc">Adaboost implementation from scratch for wine classification.</p><div class="repo-tags">#adaboost</div></div>
-    <div class="repo-card"><h2 class="repo-title"><a href="https://github.com/alexandertiopan1212/Predicting_Overweight">⚖️ Predicting Overweight</a></h2><p class="repo-desc">Predict body weight using SVR model based on obesity dataset.</p><div class="repo-tags">#svr #healthcare</div></div>
-    <div class="repo-card"><h2 class="repo-title"><a href="https://github.com/alexandertiopan1212/Kompas_News_Hoax_Detection">📰 Kompas News Hoax Detection</a></h2><p class="repo-desc">Fake news classification for Kompas news using RF and CNN.</p><div class="repo-tags">#fake-news #nlp</div></div>
-    <div class="repo-card"><h2 class="repo-title"><a href="https://github.com/alexandertiopan1212/PDF_Malware_Detection">🦠 PDF Malware Detection</a></h2><p class="repo-desc">Classify academic PDF files for malware threats using deep learning.</p><div class="repo-tags">#cybersecurity #malware</div></div>
-    <div class="repo-card"><h2 class="repo-title"><a href="https://github.com/alexandertiopan1212/Pytorch_to_ONNX_Converter">🧪 PyTorch to ONNX Converter</a></h2><p class="repo-desc">Convert CNN from PyTorch to ONNX format and handle export issues.</p><div class="repo-tags">#pytorch #onnx</div></div>
-    <div class="repo-card"><h2 class="repo-title"><a href="https://github.com/alexandertiopan1212/Kemenkeu_Bandwidth_Prediction">📡 Kemenkeu Bandwidth Prediction</a></h2><p class="repo-desc">Forecast internet usage using ARIMA and time series preprocessing.</p><div class="repo-tags">#arima #forecasting</div></div>
-
   </div>
 
   <footer>
-    &copy; 2025 Alexander Tiopan | Powered by GitHub Pages
+    &copy; 2025 Alexander Tiopan | Portfolio powered by GitHub Pages
   </footer>
-
 </body>
 </html>
