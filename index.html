@@ -4,55 +4,72 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Alexander Tiopan | GitHub Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background: #f4f4f4;
+      font-family: 'Inter', sans-serif;
+      background: #f5f7fa;
+      color: #333;
       margin: 0;
       padding: 0;
     }
     header {
-      background: #0d6efd;
+      background: #1e2a38;
       color: white;
-      padding: 2rem;
+      padding: 2.5rem 1rem;
       text-align: center;
     }
-    h1 {
+    header h1 {
       margin: 0;
+      font-size: 2.5rem;
+    }
+    header p {
+      margin: 0.5rem 0 0;
+      font-size: 1.1rem;
+      color: #cfd8dc;
     }
     .container {
-      max-width: 1000px;
+      max-width: 1100px;
       margin: 2rem auto;
       padding: 0 1rem;
     }
-    .repo {
+    .repo-card {
       background: white;
-      padding: 1rem 1.5rem;
-      margin-bottom: 1rem;
-      border-radius: 8px;
-      box-shadow: 0 0 5px rgba(0,0,0,0.05);
+      border-radius: 10px;
+      padding: 1.5rem;
+      margin-bottom: 1.5rem;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+      transition: transform 0.2s ease;
     }
-    .repo h2 {
-      margin: 0 0 0.25rem;
+    .repo-card:hover {
+      transform: translateY(-5px);
     }
-    .repo p {
-      margin: 0.5rem 0;
-    }
-    .tags {
-      font-size: 0.9rem;
-      color: #666;
-    }
-    a {
-      text-decoration: none;
+    .repo-title {
+      font-size: 1.3rem;
       color: #0d6efd;
+      margin: 0;
     }
-    a:hover {
-      text-decoration: underline;
+    .repo-desc {
+      margin: 0.5rem 0 0.75rem;
+      line-height: 1.5;
+    }
+    .repo-tags {
+      color: #6c757d;
+      font-size: 0.9rem;
     }
     footer {
       text-align: center;
-      color: #777;
-      margin: 3rem 0 1rem;
+      padding: 2rem;
+      color: #888;
+      font-size: 0.9rem;
+    }
+    @media (max-width: 600px) {
+      .repo-title {
+        font-size: 1.1rem;
+      }
+      .repo-desc {
+        font-size: 0.95rem;
+      }
     }
   </style>
 </head>
@@ -60,43 +77,68 @@
 
   <header>
     <h1>Alexander Tiopan</h1>
-    <p>Data & AI Engineer | Business Analyst | Builder of Smart Tools</p>
+    <p>Data & AI Projects | Google Apps Script | Python | Streamlit</p>
   </header>
 
   <div class="container">
 
-    <div class="repo">
-      <h2><a href="https://github.com/alexandertiopan1212/Project-Progress-Monitoring" target="_blank">📊 Project Progress Monitoring</a></h2>
-      <p>Interactive Google Sheets-based project tracker with Gantt chart, daily reporting, activity selector, and issue photo upload to Drive.</p>
-      <p class="tags">#google-apps-script #project-monitoring</p>
+    <!-- 💡 Tambahkan satu card untuk tiap project -->
+    <div class="repo-card">
+      <h2 class="repo-title">📊 Project Progress Monitoring</h2>
+      <p class="repo-desc">Interactive Google Sheets-based project tracker with Gantt chart, daily reporting, activity selector, and issue photo upload to Drive.</p>
+      <div class="repo-tags">#google-apps-script #project-monitoring</div>
     </div>
 
-    <div class="repo">
-      <h2><a href="https://github.com/alexandertiopan1212/PV-Power-Plant-Calculation" target="_blank">☀️ PV Power Plant Calculation</a></h2>
-      <p>Google Sheets template for PV power plant feasibility — includes OpenStreetMap picker, NASA GHI data fetch, and battery sizing simulation.</p>
-      <p class="tags">#google-script #open-street-map #pv-power-generation #nasa-power-api</p>
+    <div class="repo-card">
+      <h2 class="repo-title">☀️ PV Power Plant Calculation</h2>
+      <p class="repo-desc">Google Sheets template for PV power plant feasibility — includes OpenStreetMap picker, NASA GHI data fetch, and battery sizing simulation.</p>
+      <div class="repo-tags">#google-script #open-street-map #pv-power-generation #nasa-power-api</div>
     </div>
 
-    <div class="repo">
-      <h2><a href="https://github.com/alexandertiopan1212/capitalized" target="_blank">💰 Capitalized</a></h2>
-      <p>All-in-one financial modeling platform for equities, bonds, options, and project financing — built with Streamlit & real-time data.</p>
-      <p class="tags">#python #finance #valuation #streamlit</p>
+    <div class="repo-card">
+      <h2 class="repo-title">💰 Capitalized</h2>
+      <p class="repo-desc">All-in-one financial modeling platform for equities, bonds, options, and project financing — built with Streamlit & real-time data.</p>
+      <div class="repo-tags">#python #finance #valuation #streamlit</div>
     </div>
 
-    <div class="repo">
-      <h2><a href="https://github.com/alexandertiopan1212/Indonesian_Spelling_Corrector" target="_blank">📝 Indonesian Spelling Corrector</a></h2>
-      <p>RNN-based spelling correction system for Indonesian using root-word datasets, with preprocessing, training, and evaluation pipelines.</p>
-      <p class="tags">#rnn #nlp #indonesia</p>
+    <div class="repo-card">
+      <h2 class="repo-title">📝 Indonesian Spelling Corrector</h2>
+      <p class="repo-desc">RNN-based spelling correction system for Indonesian using root-word datasets, with preprocessing, training, and evaluation pipelines.</p>
+      <div class="repo-tags">#rnn #nlp #indonesia</div>
     </div>
 
-    <div class="repo">
-      <h2><a href="https://github.com/alexandertiopan1212/Compressor_Control_Offline_RL" target="_blank">🔧 Compressor Control RL</a></h2>
-      <p>Offline RL modeling for compressor control using ensembles and reinforcement learning to ensure pressure stability.</p>
-      <p class="tags">#reinforcement-learning #control-system #ensemble</p>
+    <div class="repo-card">
+      <h2 class="repo-title">🔧 Compressor Control RL</h2>
+      <p class="repo-desc">Offline RL modeling for compressor control using ensembles and reinforcement learning to ensure pressure stability.</p>
+      <div class="repo-tags">#reinforcement-learning #control-system #ensemble</div>
     </div>
 
-    <!-- Tambahkan lagi proyek lainnya dengan format serupa -->
-    <p style="text-align:center;"><a href="https://github.com/alexandertiopan1212?tab=repositories" target="_blank">📁 View All Repositories</a></p>
+    <!-- 🧠 Sisipkan sisa project lainnya dengan format sama -->
+    <div class="repo-card">
+      <h2 class="repo-title">🔍 Kompas News Hoax Detection</h2>
+      <p class="repo-desc">Automates fake news detection in Kompas articles using Random Forest and CNN for text classification.</p>
+      <div class="repo-tags">#nlp #cnn #random-forest #fake-news</div>
+    </div>
+
+    <div class="repo-card">
+      <h2 class="repo-title">🏥 Hospital Revenue Prediction</h2>
+      <p class="repo-desc">Clustering hospital revenue from insurance claims using time series clustering method.</p>
+      <div class="repo-tags">#timeseries #clustering #healthcare</div>
+    </div>
+
+    <div class="repo-card">
+      <h2 class="repo-title">📈 Gold Price Prediction</h2>
+      <p class="repo-desc">RBF neural network model to predict gold prices using time series data and custom learning rates.</p>
+      <div class="repo-tags">#rbf #neural-network #gold-price</div>
+    </div>
+
+    <div class="repo-card">
+      <h2 class="repo-title">📉 Brent Oil Price Prediction</h2>
+      <p class="repo-desc">Forecast Brent oil prices using RNN and LSTM with dropout and evaluation metrics for forecasting accuracy.</p>
+      <div class="repo-tags">#rnn #lstm #oil-price #forecasting</div>
+    </div>
+
+    <!-- Tambah terus card untuk semua project kamu yang lain -->
 
   </div>
 
