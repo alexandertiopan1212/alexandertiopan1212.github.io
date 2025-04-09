@@ -1,58 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Alexander Tiopan | Project Portfolio</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Alexander Tiopan | GitHub Portfolio</title>
   <style>
     body {
-      font-family: 'Segoe UI', sans-serif;
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
       margin: 0;
       padding: 0;
-      background: #f8f9fa;
-      color: #333;
     }
     header {
-      background-color: #0d6efd;
+      background: #0d6efd;
       color: white;
       padding: 2rem;
       text-align: center;
     }
     h1 {
       margin: 0;
-      font-size: 2.5rem;
     }
-    p.subtitle {
-      margin: 0.5rem 0 0;
-      font-size: 1.2rem;
-    }
-    main {
-      max-width: 800px;
+    .container {
+      max-width: 1000px;
       margin: 2rem auto;
       padding: 0 1rem;
     }
-    .project {
+    .repo {
       background: white;
-      border-radius: 8px;
-      padding: 1rem;
+      padding: 1rem 1.5rem;
       margin-bottom: 1rem;
-      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+      border-radius: 8px;
+      box-shadow: 0 0 5px rgba(0,0,0,0.05);
     }
-    .project h2 {
-      margin-top: 0;
+    .repo h2 {
+      margin: 0 0 0.25rem;
     }
-    footer {
-      text-align: center;
-      margin-top: 3rem;
-      padding: 1rem;
-      color: #777;
+    .repo p {
+      margin: 0.5rem 0;
+    }
+    .tags {
+      font-size: 0.9rem;
+      color: #666;
     }
     a {
-      color: #0d6efd;
       text-decoration: none;
+      color: #0d6efd;
     }
     a:hover {
       text-decoration: underline;
+    }
+    footer {
+      text-align: center;
+      color: #777;
+      margin: 3rem 0 1rem;
     }
   </style>
 </head>
@@ -60,33 +60,48 @@
 
   <header>
     <h1>Alexander Tiopan</h1>
-    <p class="subtitle">Business Analyst & Tech Enthusiast | ID/X Partners</p>
+    <p>Data & AI Engineer | Business Analyst | Builder of Smart Tools</p>
   </header>
 
-  <main>
-    <section class="project">
-      <h2>📊 Project Progress Monitoring</h2>
-      <p>Smart Google Sheets system to manage project schedules, Gantt charts, daily reports, and issue tracking with photo uploads.</p>
-      <p><a href="https://github.com/alexandertiopan1212/Project-Progress-Monitoring" target="_blank">View on GitHub →</a></p>
-    </section>
+  <div class="container">
 
-    <section class="project">
-      <h2>☀️ PV Power Plant Calculator</h2>
-      <p>Google Sheets tool for calculating PV solar performance, with OpenStreetMap integration and NASA GHI data automation.</p>
-      <p><a href="https://github.com/alexandertiopan1212/PV-Power-Plant-Calculation" target="_blank">View on GitHub →</a></p>
-    </section>
+    <div class="repo">
+      <h2><a href="https://github.com/alexandertiopan1212/Project-Progress-Monitoring" target="_blank">📊 Project Progress Monitoring</a></h2>
+      <p>Interactive Google Sheets-based project tracker with Gantt chart, daily reporting, activity selector, and issue photo upload to Drive.</p>
+      <p class="tags">#google-apps-script #project-monitoring</p>
+    </div>
 
-    <!-- Tambahkan proyek lainnya di sini -->
+    <div class="repo">
+      <h2><a href="https://github.com/alexandertiopan1212/PV-Power-Plant-Calculation" target="_blank">☀️ PV Power Plant Calculation</a></h2>
+      <p>Google Sheets template for PV power plant feasibility — includes OpenStreetMap picker, NASA GHI data fetch, and battery sizing simulation.</p>
+      <p class="tags">#google-script #open-street-map #pv-power-generation #nasa-power-api</p>
+    </div>
 
-    <section>
-      <h2>📬 Contact</h2>
-      <p>Email: <a href="mailto:alexandertiopan1212@gmail.com">alexandertiopan1212@gmail.com</a></p>
-      <p>LinkedIn: <a href="https://linkedin.com/in/alexandertiopan1212" target="_blank">linkedin.com/in/alexandertiopan1212</a></p>
-    </section>
-  </main>
+    <div class="repo">
+      <h2><a href="https://github.com/alexandertiopan1212/capitalized" target="_blank">💰 Capitalized</a></h2>
+      <p>All-in-one financial modeling platform for equities, bonds, options, and project financing — built with Streamlit & real-time data.</p>
+      <p class="tags">#python #finance #valuation #streamlit</p>
+    </div>
+
+    <div class="repo">
+      <h2><a href="https://github.com/alexandertiopan1212/Indonesian_Spelling_Corrector" target="_blank">📝 Indonesian Spelling Corrector</a></h2>
+      <p>RNN-based spelling correction system for Indonesian using root-word datasets, with preprocessing, training, and evaluation pipelines.</p>
+      <p class="tags">#rnn #nlp #indonesia</p>
+    </div>
+
+    <div class="repo">
+      <h2><a href="https://github.com/alexandertiopan1212/Compressor_Control_Offline_RL" target="_blank">🔧 Compressor Control RL</a></h2>
+      <p>Offline RL modeling for compressor control using ensembles and reinforcement learning to ensure pressure stability.</p>
+      <p class="tags">#reinforcement-learning #control-system #ensemble</p>
+    </div>
+
+    <!-- Tambahkan lagi proyek lainnya dengan format serupa -->
+    <p style="text-align:center;"><a href="https://github.com/alexandertiopan1212?tab=repositories" target="_blank">📁 View All Repositories</a></p>
+
+  </div>
 
   <footer>
-    &copy; 2025 Alexander Tiopan. Built with ❤️ using GitHub Pages.
+    &copy; 2025 Alexander Tiopan | Powered by GitHub Pages
   </footer>
 
 </body>
