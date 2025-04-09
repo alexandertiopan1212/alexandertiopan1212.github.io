@@ -49,6 +49,13 @@
       color: #0d6efd;
       margin: 0;
     }
+    .repo-title a {
+      color: #0d6efd;
+      text-decoration: none;
+    }
+    .repo-title a:hover {
+      text-decoration: underline;
+    }
     .repo-desc {
       margin: 0.5rem 0 0.75rem;
       line-height: 1.5;
@@ -63,14 +70,6 @@
       color: #888;
       font-size: 0.9rem;
     }
-    @media (max-width: 600px) {
-      .repo-title {
-        font-size: 1.1rem;
-      }
-      .repo-desc {
-        font-size: 0.95rem;
-      }
-    }
   </style>
 </head>
 <body>
@@ -82,62 +81,56 @@
 
   <div class="container">
 
-    <!-- Contoh repo (ulang per item) -->
+    <!-- Generated repository cards -->
     <div class="repo-card">
-      <h2 class="repo-title">📊 Project Progress Monitoring</h2>
-      <p class="repo-desc">Interactive Google Sheets-based project tracker with Gantt chart, daily reporting, activity selector, and issue photo upload to Drive.</p>
+      <h2 class="repo-title"><a href="https://github.com/alexandertiopan1212/Project-Progress-Monitoring">📊 Project Progress Monitoring</a></h2>
+      <p class="repo-desc">Interactive project tracker with Gantt chart, daily reporting, and issue photo upload using Google Apps Script.</p>
       <div class="repo-tags">#google-apps-script #project-monitoring</div>
     </div>
 
     <div class="repo-card">
-      <h2 class="repo-title">☀️ PV Power Plant Calculation</h2>
-      <p class="repo-desc">Google Sheets template for PV power plant feasibility — includes OpenStreetMap picker, NASA GHI data fetch, and battery sizing simulation.</p>
-      <div class="repo-tags">#google-script #open-street-map #pv-power-generation #nasa-power-api</div>
+      <h2 class="repo-title"><a href="https://github.com/alexandertiopan1212/PV-Power-Plant-Calculation">☀️ PV Power Plant Calculation</a></h2>
+      <p class="repo-desc">Google Sheets template for PV feasibility with OSM map, NASA GHI fetch, and battery sizing.</p>
+      <div class="repo-tags">#google-apps-script #solar-energy #nasa-api</div>
     </div>
 
     <div class="repo-card">
-      <h2 class="repo-title">💰 Capitalized</h2>
-      <p class="repo-desc">Financial modeling platform for equities, bonds, options, and project financing — built with Streamlit & real-time market data.</p>
-      <div class="repo-tags">#python #finance #valuation #streamlit</div>
+      <h2 class="repo-title"><a href="https://github.com/alexandertiopan1212/capitalized">💰 Capitalized</a></h2>
+      <p class="repo-desc">Streamlit-based financial modeling app for valuation, pricing, and simulation.</p>
+      <div class="repo-tags">#python #finance #streamlit</div>
     </div>
 
     <div class="repo-card">
-      <h2 class="repo-title">📝 Indonesian Spelling Corrector</h2>
-      <p class="repo-desc">RNN-based spelling correction system for Indonesian using root-word datasets with preprocessing and evaluation pipeline.</p>
+      <h2 class="repo-title"><a href="https://github.com/alexandertiopan1212/Indonesian_Spelling_Corrector">📝 Indonesian Spelling Corrector</a></h2>
+      <p class="repo-desc">RNN-based spelling correction for Indonesian root words with preprocessing pipeline.</p>
       <div class="repo-tags">#nlp #rnn #indonesia</div>
     </div>
 
     <div class="repo-card">
-      <h2 class="repo-title">🔧 Compressor Control RL</h2>
-      <p class="repo-desc">Compressor machine parameter prediction using ensemble and reinforcement learning to ensure stable pressure.</p>
-      <div class="repo-tags">#reinforcement-learning #control-system</div>
+      <h2 class="repo-title"><a href="https://github.com/alexandertiopan1212/Compressor_Control_Offline_RL">🔧 Compressor Control RL</a></h2>
+      <p class="repo-desc">Reinforcement learning-based model to stabilize compressor pressure using offline data.</p>
+      <div class="repo-tags">#rl #control-system #ensemble</div>
     </div>
 
-    <div class="repo-card">
-      <h2 class="repo-title">🧠 Streamlit App: Meeting Notes Summarizer</h2>
-      <p class="repo-desc">Summarize meeting notes using NLP pipeline in Streamlit. Upload text and get concise insights instantly.</p>
-      <div class="repo-tags">#streamlit #nlp #text-summarization</div>
-    </div>
-
-    <div class="repo-card">
-      <h2 class="repo-title">🕵️ Streamlit App: Cheat Detection</h2>
-      <p class="repo-desc">A web app that detects cheating patterns using anomaly detection algorithms and time-based submissions.</p>
-      <div class="repo-tags">#streamlit #detection #anomaly</div>
-    </div>
-
-    <div class="repo-card">
-      <h2 class="repo-title">🏥 Hospital Revenue Prediction</h2>
-      <p class="repo-desc">Forecast insurance-based revenue using time series clustering from hospital claims.</p>
-      <div class="repo-tags">#healthcare #clustering #timeseries</div>
-    </div>
-
-    <div class="repo-card">
-      <h2 class="repo-title">💡 Kompas News Hoax Detection</h2>
-      <p class="repo-desc">Fake news classification for Kompas articles using Random Forest and CNN comparison.</p>
-      <div class="repo-tags">#text-classification #cnn #randomforest</div>
-    </div>
-
-    <!-- Tambahkan semua repos lain di sini dengan deskripsi, tag, dan link -->
+    <!-- List of remaining repos -->
+    <div class="repo-card"><h2 class="repo-title"><a href="https://github.com/alexandertiopan1212/Classify_Fish_Species">🐟 Classify Fish Species</a></h2><p class="repo-desc">Fish classification using morphological features and image-based statistics.</p><div class="repo-tags">#image-classification #opencv</div></div>
+    <div class="repo-card"><h2 class="repo-title"><a href="https://github.com/alexandertiopan1212/Brent_Oil_Price_Prediction">🛢️ Brent Oil Price Prediction</a></h2><p class="repo-desc">Brent oil price forecasting using LSTM and dropout regularization.</p><div class="repo-tags">#timeseries #lstm</div></div>
+    <div class="repo-card"><h2 class="repo-title"><a href="https://github.com/alexandertiopan1212/Fracture_Leg_Detection">🦴 Fracture Leg Detection</a></h2><p class="repo-desc">Detecting leg bone fractures in X-ray using CNN and VGG16 architecture.</p><div class="repo-tags">#cnn #medical-ai</div></div>
+    <div class="repo-card"><h2 class="repo-title"><a href="https://github.com/alexandertiopan1212/Clustering_Mobilphone_Sales">📱 Clustering Mobilephone Sales</a></h2><p class="repo-desc">Segment mobile phones using K-means and data visualization.</p><div class="repo-tags">#clustering #marketing</div></div>
+    <div class="repo-card"><h2 class="repo-title"><a href="https://github.com/alexandertiopan1212/Clustering_Training_Customer">🧪 Clustering Training Customer</a></h2><p class="repo-desc">Customer segmentation with RFM model for training evaluation.</p><div class="repo-tags">#rfm #kmeans</div></div>
+    <div class="repo-card"><h2 class="repo-title"><a href="https://github.com/alexandertiopan1212/Hospital_Revenue_Prediction">🏥 Hospital Revenue Prediction</a></h2><p class="repo-desc">Clustering hospital revenue based on insurance claim payment.</p><div class="repo-tags">#clustering #timeseries</div></div>
+    <div class="repo-card"><h2 class="repo-title"><a href="https://github.com/alexandertiopan1212/American_Option_Price">📈 American Option Price</a></h2><p class="repo-desc">Option valuation using binomial model for project participation rights.</p><div class="repo-tags">#options #binomial-tree</div></div>
+    <div class="repo-card"><h2 class="repo-title"><a href="https://github.com/alexandertiopan1212/GE_Visualization">📊 GE Visualization</a></h2><p class="repo-desc">GE McKinsey Matrix for strategic market analysis using Python visualization.</p><div class="repo-tags">#strategy #mckinsey</div></div>
+    <div class="repo-card"><h2 class="repo-title"><a href="https://github.com/alexandertiopan1212/Gold_Price_Prediction">🥇 Gold Price Prediction</a></h2><p class="repo-desc">Gold price forecasting with RBF Neural Network model.</p><div class="repo-tags">#rbf #forecasting</div></div>
+    <div class="repo-card"><h2 class="repo-title"><a href="https://github.com/alexandertiopan1212/District_Graph_Coloring">🗺️ District Graph Coloring</a></h2><p class="repo-desc">Greedy and Welch-Powell algorithms for district map coloring.</p><div class="repo-tags">#graph-theory</div></div>
+    <div class="repo-card"><h2 class="repo-title"><a href="https://github.com/alexandertiopan1212/Clustering_Digital_Wallet_Users">💳 Digital Wallet Clustering</a></h2><p class="repo-desc">Segment users of digital wallet using KPrototypes algorithm.</p><div class="repo-tags">#clustering #kprototypes</div></div>
+    <div class="repo-card"><h2 class="repo-title"><a href="https://github.com/alexandertiopan1212/Stock_Trend_Prediction">📉 Stock Trend Prediction</a></h2><p class="repo-desc">TOBA stock prediction using Random Forest and feature engineering.</p><div class="repo-tags">#stocks #random-forest</div></div>
+    <div class="repo-card"><h2 class="repo-title"><a href="https://github.com/alexandertiopan1212/Classify_Wine_Class">🍷 Classify Wine Class</a></h2><p class="repo-desc">Adaboost implementation from scratch for wine classification.</p><div class="repo-tags">#adaboost</div></div>
+    <div class="repo-card"><h2 class="repo-title"><a href="https://github.com/alexandertiopan1212/Predicting_Overweight">⚖️ Predicting Overweight</a></h2><p class="repo-desc">Predict body weight using SVR model based on obesity dataset.</p><div class="repo-tags">#svr #healthcare</div></div>
+    <div class="repo-card"><h2 class="repo-title"><a href="https://github.com/alexandertiopan1212/Kompas_News_Hoax_Detection">📰 Kompas News Hoax Detection</a></h2><p class="repo-desc">Fake news classification for Kompas news using RF and CNN.</p><div class="repo-tags">#fake-news #nlp</div></div>
+    <div class="repo-card"><h2 class="repo-title"><a href="https://github.com/alexandertiopan1212/PDF_Malware_Detection">🦠 PDF Malware Detection</a></h2><p class="repo-desc">Classify academic PDF files for malware threats using deep learning.</p><div class="repo-tags">#cybersecurity #malware</div></div>
+    <div class="repo-card"><h2 class="repo-title"><a href="https://github.com/alexandertiopan1212/Pytorch_to_ONNX_Converter">🧪 PyTorch to ONNX Converter</a></h2><p class="repo-desc">Convert CNN from PyTorch to ONNX format and handle export issues.</p><div class="repo-tags">#pytorch #onnx</div></div>
+    <div class="repo-card"><h2 class="repo-title"><a href="https://github.com/alexandertiopan1212/Kemenkeu_Bandwidth_Prediction">📡 Kemenkeu Bandwidth Prediction</a></h2><p class="repo-desc">Forecast internet usage using ARIMA and time series preprocessing.</p><div class="repo-tags">#arima #forecasting</div></div>
 
   </div>
 
