@@ -6,25 +6,108 @@
   <title>Alexander Tiopan | Portfolio</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <style>
-    body { margin: 0; font-family: 'Inter', sans-serif; background-color: #f7f9fb; color: #333; }
-    header { background-color: white; border-bottom: 1px solid #ddd; padding: 1.5rem 2rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; }
-    .name-title { font-size: 1.75rem; font-weight: 700; color: #1e2a38; }
-    nav a { margin-left: 1.5rem; text-decoration: none; color: #495057; font-weight: 500; }
-    nav a:hover { color: #0d6efd; }
-    .main { display: flex; flex-wrap: wrap; padding: 2rem; max-width: 1200px; margin: auto; }
-    .sidebar { flex: 1; min-width: 250px; max-width: 300px; margin-right: 2rem; text-align: center; }
-    .sidebar img { border-radius: 50%; width: 140px; height: 140px; object-fit: cover; }
-    .sidebar h2 { margin-top: 1rem; margin-bottom: 0.3rem; font-size: 1.25rem; }
-    .sidebar p { margin: 0.2rem 0; font-size: 0.95rem; color: #555; }
-    .links a { display: block; margin: 0.25rem 0; color: #0d6efd; text-decoration: none; font-size: 0.95rem; }
-    .projects { flex: 3; min-width: 300px; }
-    .project { background: white; padding: 1.5rem; margin-bottom: 1.5rem; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.05); }
-    .project h3 { margin: 0; color: #0d6efd; font-size: 1.1rem; }
-    .project h3 a { color: #0d6efd; text-decoration: none; }
-    .project h3 a:hover { text-decoration: underline; }
-    .project p { margin: 0.5rem 0; }
-    .tags { color: #888; font-size: 0.85rem; }
-    footer { text-align: center; padding: 2rem; color: #888; font-size: 0.9rem; }
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background-color: #f7f9fb;
+      color: #333;
+    }
+    header {
+      background-color: white;
+      border-bottom: 1px solid #ddd;
+      padding: 1.5rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    .name-title {
+      font-size: 1.75rem;
+      font-weight: 700;
+      color: #1e2a38;
+    }
+    nav a {
+      margin-left: 1.5rem;
+      text-decoration: none;
+      color: #495057;
+      font-weight: 500;
+    }
+    nav a:hover {
+      color: #0d6efd;
+    }
+    .main {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 2rem;
+      max-width: 1200px;
+      margin: auto;
+    }
+    .sidebar {
+      flex: 1;
+      min-width: 250px;
+      max-width: 300px;
+      margin-right: 2rem;
+      text-align: center;
+    }
+    .sidebar img {
+      border-radius: 50%;
+      width: 140px;
+      height: 140px;
+      object-fit: cover;
+    }
+    .sidebar h2 {
+      margin-top: 1rem;
+      margin-bottom: 0.3rem;
+      font-size: 1.25rem;
+    }
+    .sidebar p {
+      margin: 0.2rem 0;
+      font-size: 0.95rem;
+      color: #555;
+    }
+    .links a {
+      display: block;
+      margin: 0.25rem 0;
+      color: #0d6efd;
+      text-decoration: none;
+      font-size: 0.95rem;
+    }
+    .projects {
+      flex: 3;
+      min-width: 300px;
+    }
+    .project {
+      background: white;
+      padding: 1.5rem;
+      margin-bottom: 1.5rem;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    }
+    .project h3 {
+      margin: 0;
+      color: #0d6efd;
+      font-size: 1.1rem;
+    }
+    .project h3 a {
+      color: #0d6efd;
+      text-decoration: none;
+    }
+    .project h3 a:hover {
+      text-decoration: underline;
+    }
+    .project p {
+      margin: 0.5rem 0;
+    }
+    .tags {
+      color: #888;
+      font-size: 0.85rem;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem;
+      color: #888;
+      font-size: 0.9rem;
+    }
   </style>
 </head>
 <body>
@@ -52,57 +135,124 @@
     </div>
 
     <div class="projects" id="projects">
+
+      <!-- ✨ Mulai dari sini: semua 23 project lengkap -->
       <div class="project">
         <h3><a href="https://github.com/alexandertiopan1212/Project-Progress-Monitoring">📊 Project Progress Monitoring</a></h3>
-        <p>Google Sheets-based project tracker with Gantt chart, daily reporting, activity selector, and issue photo upload to Google Drive.</p>
-        <div class="tags">#google-apps-script #project-monitoring</div>
+        <p>Google Sheets-based tracker with Gantt chart, daily reporting, activity selector, and issue photo uploads to Google Drive.</p>
+        <div class="tags">#google-apps-script #project-management</div>
       </div>
       <div class="project">
         <h3><a href="https://github.com/alexandertiopan1212/PV-Power-Plant-Calculation">☀️ PV Power Plant Calculation</a></h3>
-        <p>Interactive feasibility calculator for solar PV systems with OpenStreetMap location picker, NASA GHI integration, and battery sizing simulation.</p>
-        <div class="tags">#google-script #open-street-map #nasa-power-api</div>
+        <p>Feasibility calculator for solar PV systems — OpenStreetMap picker, NASA GHI data, and battery sizing simulation.</p>
+        <div class="tags">#solar-energy #google-script #nasa-api</div>
       </div>
       <div class="project">
         <h3><a href="https://github.com/alexandertiopan1212/capitalized">💰 Capitalized</a></h3>
-        <p>Financial modeling platform to value stocks, bonds, and options, and simulate project financing using Streamlit and live data.</p>
-        <div class="tags">#python #finance #streamlit</div>
+        <p>Financial modeling platform for stocks, bonds, options, and project finance — powered by Streamlit and market data.</p>
+        <div class="tags">#python #streamlit #valuation</div>
       </div>
       <div class="project">
         <h3><a href="https://github.com/alexandertiopan1212/Indonesian_Spelling_Corrector">📝 Indonesian Spelling Corrector</a></h3>
-        <p>RNN-based spelling corrector using root-word dataset, tokenization, training, and evaluation in Bahasa Indonesia.</p>
-        <div class="tags">#rnn #nlp #indonesia</div>
+        <p>Spelling correction system using RNN trained on root-word datasets with tokenizer and evaluation framework.</p>
+        <div class="tags">#nlp #rnn #indonesia</div>
       </div>
       <div class="project">
         <h3><a href="https://github.com/alexandertiopan1212/Compressor_Control_Offline_RL">🔧 Compressor Control RL</a></h3>
-        <p>Offline reinforcement learning for compressor modeling and control, featuring pressure prediction and ensemble models.</p>
-        <div class="tags">#reinforcement-learning #control-system</div>
+        <p>Predicts compressor behavior using offline reinforcement learning and ensemble methods for stable pressure control.</p>
+        <div class="tags">#rl #control-system #ml</div>
       </div>
       <div class="project">
         <h3><a href="https://github.com/alexandertiopan1212/Classify_Fish_Species">🐟 Classify Fish Species</a></h3>
-        <p>Classify fish species using morphological features and image processing techniques like correlation and energy.</p>
-        <div class="tags">#classification #fish #image-processing</div>
+        <p>Classify fish species using image-based features like dissimilarity, energy, and correlation metrics.</p>
+        <div class="tags">#classification #image-processing</div>
       </div>
       <div class="project">
         <h3><a href="https://github.com/alexandertiopan1212/Brent_Oil_Price_Prediction">🛢 Brent Oil Price Prediction</a></h3>
-        <p>Forecast Brent oil prices with LSTM-RNN using historical time series data and dropout training.</p>
-        <div class="tags">#rnn #lstm #forecasting</div>
+        <p>Forecast Brent oil price using LSTM neural networks trained with historical time series data.</p>
+        <div class="tags">#lstm #forecasting #rnn</div>
       </div>
       <div class="project">
         <h3><a href="https://github.com/alexandertiopan1212/Fracture_Leg_Detection">🦴 Fracture Leg Detection</a></h3>
-        <p>Detect leg fractures in X-ray images using VGG16 CNN model to support clinical diagnostics.</p>
-        <div class="tags">#cnn #image-classification #medical-ai</div>
+        <p>Detect bone fractures in leg X-ray images using VGG16 pre-trained CNN for healthcare applications.</p>
+        <div class="tags">#cnn #medical-ai #xray</div>
       </div>
       <div class="project">
         <h3><a href="https://github.com/alexandertiopan1212/Clustering_Mobilphone_Sales">📱 Clustering Mobilephone Sales</a></h3>
-        <p>Use K-Means and visualization tools to cluster mobile phones for market segmentation analysis.</p>
-        <div class="tags">#clustering #market-segmentation</div>
+        <p>Segment mobile phones using K-Means clustering and feature-based analysis for market insights.</p>
+        <div class="tags">#clustering #market-analysis</div>
       </div>
       <div class="project">
         <h3><a href="https://github.com/alexandertiopan1212/Clustering_Training_Customer">🎓 Clustering Training Customer</a></h3>
-        <p>K-Means clustering of Banten Polytechnic students based on RFM (Recency, Frequency, Monetary) profiling.</p>
-        <div class="tags">#rfm #clustering #kmeans</div>
+        <p>Segment alumni using Recency, Frequency, and Monetary (RFM) approach and clustering algorithms.</p>
+        <div class="tags">#rfm #kmeans #segmentation</div>
       </div>
-      <!-- Tambahkan sisanya sesuai format ini -->
+      <div class="project">
+        <h3><a href="https://github.com/alexandertiopan1212/Hospital_Revenue_Prediction">🏥 Hospital Revenue Prediction</a></h3>
+        <p>Clusters hospital revenue patterns using timeseries data to forecast insurance payments.</p>
+        <div class="tags">#clustering #healthcare #forecasting</div>
+      </div>
+      <div class="project">
+        <h3><a href="https://github.com/alexandertiopan1212/American_Option_Price">💹 American Option Price</a></h3>
+        <p>Option valuation using the American Binomial Tree method, applied to participation rights in projects.</p>
+        <div class="tags">#finance #options #binomial</div>
+      </div>
+      <div class="project">
+        <h3><a href="https://github.com/alexandertiopan1212/GE_Visualization">📊 GE Visualization</a></h3>
+        <p>Implements the GE McKinsey Matrix using Python to assess strategic market positioning.</p>
+        <div class="tags">#strategy #matrix #visualization</div>
+      </div>
+      <div class="project">
+        <h3><a href="https://github.com/alexandertiopan1212/Gold_Price_Prediction">🥇 Gold Price Prediction</a></h3>
+        <p>Predict gold prices with a Radial Basis Function (RBF) neural network model on time series data.</p>
+        <div class="tags">#rbf #neural-network #gold</div>
+      </div>
+      <div class="project">
+        <h3><a href="https://github.com/alexandertiopan1212/District_Graph_Coloring">🗺️ District Graph Coloring</a></h3>
+        <p>Applies Greedy and Welch Powell algorithms to assign unique colors to adjacent districts.</p>
+        <div class="tags">#graph-coloring #algorithms</div>
+      </div>
+      <div class="project">
+        <h3><a href="https://github.com/alexandertiopan1212/Clustering_Digital_Wallet_Users">💳 Clustering Digital Wallet Users</a></h3>
+        <p>Uses K-Prototypes to segment e-wallet users from survey data with both numeric and categorical features.</p>
+        <div class="tags">#kprototypes #customer-segmentation</div>
+      </div>
+      <div class="project">
+        <h3><a href="https://github.com/alexandertiopan1212/Stock_Trend_Prediction">📈 Stock Trend Prediction</a></h3>
+        <p>Predicts TOBA stock price trends with Random Forest and feature selection to reach 70.2% accuracy.</p>
+        <div class="tags">#randomforest #stock-analysis</div>
+      </div>
+      <div class="project">
+        <h3><a href="https://github.com/alexandertiopan1212/Classify_Wine_Class">🍷 Classify Wine Class</a></h3>
+        <p>Adaboost from scratch to classify wine types based on chemical and physical attributes.</p>
+        <div class="tags">#adaboost #classification</div>
+      </div>
+      <div class="project">
+        <h3><a href="https://github.com/alexandertiopan1212/Predicting_Overweight">⚖️ Predicting Overweight</a></h3>
+        <p>Applies Support Vector Regression to obesity data to predict health risks and weight category.</p>
+        <div class="tags">#svr #obesity #healthcare</div>
+      </div>
+      <div class="project">
+        <h3><a href="https://github.com/alexandertiopan1212/Kompas_News_Hoax_Detection">📰 Kompas News Hoax Detection</a></h3>
+        <p>Automated hoax detection in Kompas articles comparing CNN and Random Forest models.</p>
+        <div class="tags">#nlp #hoax-detection</div>
+      </div>
+      <div class="project">
+        <h3><a href="https://github.com/alexandertiopan1212/PDF_Malware_Detection">🛡️ PDF Malware Detection</a></h3>
+        <p>Detects malicious scholarly PDFs using deep learning and evaluation metrics.</p>
+        <div class="tags">#cybersecurity #malware #deeplearning</div>
+      </div>
+      <div class="project">
+        <h3><a href="https://github.com/alexandertiopan1212/Pytorch_to_ONNX_Converter">🔄 PyTorch to ONNX Converter</a></h3>
+        <p>Converts CNN from PyTorch to ONNX format for interoperability and deployment.</p>
+        <div class="tags">#pytorch #onnx #model-export</div>
+      </div>
+      <div class="project">
+        <h3><a href="https://github.com/alexandertiopan1212/Kemenkeu_Bandwidth_Prediction">📶 Kemenkeu Bandwidth Prediction</a></h3>
+        <p>Forecasts government bandwidth consumption using ARIMA model and exploratory data analysis.</p>
+        <div class="tags">#arima #time-series #forecasting</div>
+      </div>
+      <!-- ✅ END FULL LIST -->
     </div>
   </div>
 
